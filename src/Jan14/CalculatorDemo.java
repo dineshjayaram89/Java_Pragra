@@ -37,24 +37,19 @@ public class CalculatorDemo {
         */
         switch (z) {
             case 1:
-                double addResult = sum(x, y);
-                System.out.println("The addition result: " + addResult);
+                System.out.println("The addition result: " + sum(x, y));
                 break;
             case 2:
-                double subtractResult = sub(x, y);
-                System.out.println("The subtraction result: " + subtractResult);
+                System.out.println("The subtraction result: " + sub(x, y));
                 break;
             case 3:
-                double productResult = mul(x, y);
-                System.out.println("The product of two numbers is: " + productResult);
+                System.out.println("The product of two numbers is: " + mul(x, y));
                 break;
             case 4:
-                double divisionResult = div(x, y);
-                System.out.println("The division result: " + divisionResult);
+                System.out.println("The division result: " + div(x, y));
                 break;
             case 5:
-                double modResult = mod(x, y);
-                System.out.println("The mod result: " + modResult);
+                System.out.println("The mod result: " + mod(x, y));
                 break;
             default:
                 System.out.println("Invalid choice");
@@ -76,7 +71,4 @@ public class CalculatorDemo {
     public static double mod(double x, double y){
         return x % y;
     }
-
-
-
 }
