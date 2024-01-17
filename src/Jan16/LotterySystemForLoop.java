@@ -6,7 +6,7 @@ public class LotterySystemForLoop {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int points = 0;
-        System.out.println("You have 100 chances to win 100 Million. \nKeep entering numbers till you win or you use up the 100 chances");
+        System.out.println("You have 100 chances to win 100 Million. \nKeep entering numbers till you win or you use the 100 chances");
         for ( int i = 1; i <= 100; i++ ){
             int x = sc.nextInt();
             if(x % 7 == 0){
@@ -21,7 +21,8 @@ public class LotterySystemForLoop {
                 System.out.println("You won the Jackpot of 100M");
                 break;
             }
+
         }
-        System.out.println("Your total points: "+points);
+        System.out.println("Your Points total: "+(points+100000000));
     }
 }
