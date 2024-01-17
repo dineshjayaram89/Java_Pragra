@@ -14,7 +14,4 @@ public class DoWhile {
         System.out.println("5 * "+j+" = "+(j*k));
         j++;
     } while (j <= 10);
-
-
-
 }}
