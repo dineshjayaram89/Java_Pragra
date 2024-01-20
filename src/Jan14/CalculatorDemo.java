@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class CalculatorDemo {
     public static void main(String[] args) {
         CalculatorClass cal = new CalculatorClass();
-        int c;
+        int c = 1 ;
         int z;
         Scanner sc = new Scanner(System.in);
         do {
             System.out.print("Enter the function you want to \n1. Add. \n2. Subtract. \n3. Multiply. \n4. Divide.\n5.Modulus. \n6.Exit \nYour selection:");
             z = sc.nextInt();
-            do {
+            while (c == 1 ){
                 switch (z) {
                     case 1:
                         System.out.println("How many values you want to add 1. Two. 2. Three 3. Four");
@@ -95,13 +95,17 @@ public class CalculatorDemo {
                         System.out.println("The mod result: " + cal.mod(cal.x, cal.y));
                         break;
                     case 6:
+                        c = 2;
                         break;
                     default:
                         System.out.println("Invalid choice");
                 }
-                System.out.println("Do you still want to continue 1. Yes or 2. No");
+
+                if( z != 6 ) {
+                    System.out.println("Do you still want to continue 1. Yes or 2. No");
                 c = sc.nextInt();
-            } while (c == 1);
+                }
+            } ;
         }while (z != 6);
 
     }
