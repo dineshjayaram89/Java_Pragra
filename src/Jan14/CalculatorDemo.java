@@ -1,19 +1,114 @@
 package Jan14;
 
-import javax.swing.*;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class CalculatorDemo {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
-        System.out.print("Enter first number: ");
-        double x = sc.nextDouble();
-        System.out.print("Enter second number: ");
-        double y = sc.nextDouble();
-        System.out.print("Enter the function you want to \n1. Add. \n2. Subtract. \n3. Multiply. \n4. Divide.\n5.Modulus. \nYour selection:");
-        int z = sc.nextInt();
-        /*
+        CalculatorClass cal = new CalculatorClass();
+        int c;
+        int z;
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.print("Enter the function you want to \n1. Add. \n2. Subtract. \n3. Multiply. \n4. Divide.\n5.Modulus. \n6.Exit \nYour selection:");
+            z = sc.nextInt();
+            do {
+                switch (z) {
+                    case 1:
+                        System.out.println("How many values you want to add 1. Two. 2. Three 3. Four");
+                        int ch = sc.nextInt();
+                        if (ch == 1) {
+                            System.out.print("Enter first number: ");
+                            cal.x = sc.nextDouble();
+                            System.out.print("Enter second number: ");
+                            cal.y = sc.nextDouble();
+                            System.out.println("The addition result: " + cal.sum(cal.x, cal.y));
+                        } else if (ch == 2) {
+                            System.out.print("Enter first number: ");
+                            cal.x = sc.nextDouble();
+                            System.out.print("Enter second number: ");
+                            cal.y = sc.nextDouble();
+                            System.out.print("Enter third number: ");
+                            cal.z = sc.nextDouble();
+                            System.out.println("The addition result: " + cal.sum(cal.x, cal.y, cal.z));
+                        } else if (ch == 3) {
+                            System.out.print("Enter first number: ");
+                            cal.x = sc.nextDouble();
+                            System.out.print("Enter second number: ");
+                            cal.y = sc.nextDouble();
+                            System.out.print("Enter third number: ");
+                            cal.z = sc.nextDouble();
+                            System.out.print("Enter fourth number: ");
+                            cal.x1 = sc.nextDouble();
+                            System.out.println("The addition result: " + cal.sum(cal.x, cal.y, cal.z, cal.x1));
+                        } else {
+                            System.out.println("Wrong selection");
+                            break;
+                        }
+                        break;
+                    case 2:
+                        System.out.println("The subtraction result: " + cal.sub(cal.x, cal.y));
+                        break;
+                    case 3:
+                        System.out.println("How many values you want to add 1. Two. 2. Three 3. Four");
+                        int ch1 = sc.nextInt();
+                        if (ch1 == 1) {
+                            System.out.print("Enter first number: ");
+                            cal.x = sc.nextDouble();
+                            System.out.print("Enter second number: ");
+                            cal.y = sc.nextDouble();
+                            System.out.println("The addition result: " + cal.mul(cal.x, cal.y));
+                        } else if (ch1 == 2) {
+                            System.out.print("Enter first number: ");
+                            cal.x = sc.nextDouble();
+                            System.out.print("Enter second number: ");
+                            cal.y = sc.nextDouble();
+                            System.out.print("Enter third number: ");
+                            cal.z = sc.nextDouble();
+                            System.out.println("The addition result: " + cal.mul(cal.x, cal.y, cal.z));
+                        } else if (ch1 == 3) {
+                            System.out.print("Enter first number: ");
+                            cal.x = sc.nextDouble();
+                            System.out.print("Enter second number: ");
+                            cal.y = sc.nextDouble();
+                            System.out.print("Enter third number: ");
+                            cal.z = sc.nextDouble();
+                            System.out.print("Enter fourth number: ");
+                            cal.x1 = sc.nextDouble();
+                            System.out.println("The addition result: " + cal.mul(cal.x, cal.y, cal.z, cal.x1));
+                        } else {
+                            System.out.println("Wrong selection");
+                            break;
+                        }
+                        break;
+                    case 4:
+                        System.out.print("Enter first number: ");
+                        cal.x = sc.nextDouble();
+                        System.out.print("Enter second number: ");
+                        cal.y = sc.nextDouble();
+                        System.out.println("The division result: " + cal.div(cal.x, cal.y));
+                        break;
+                    case 5:
+                        System.out.print("Enter first number: ");
+                        cal.x = sc.nextDouble();
+                        System.out.print("Enter second number: ");
+                        cal.y = sc.nextDouble();
+                        System.out.println("The mod result: " + cal.mod(cal.x, cal.y));
+                        break;
+                    case 6:
+                        break;
+                    default:
+                        System.out.println("Invalid choice");
+                }
+                System.out.println("Do you still want to continue 1. Yes or 2. No");
+                c = sc.nextInt();
+            } while (c == 1);
+        }while (z != 6);
+
+    }
+}
+
+
+/*
         if (z == 1)
         {
             double add = sum(x,y);
@@ -34,29 +129,8 @@ public class CalculatorDemo {
         else {
             System.out.println("Invalid Selection. Please select between 1 and 5");
         }
-        */
-        switch (z) {
-            case 1:
-                System.out.println("The addition result: " + sum(x, y));
-                break;
-            case 2:
-                System.out.println("The subtraction result: " + sub(x, y));
-                break;
-            case 3:
-                System.out.println("The product of two numbers is: " + mul(x, y));
-                break;
-            case 4:
-                System.out.println("The division result: " + div(x, y));
-                break;
-            case 5:
-                System.out.println("The mod result: " + mod(x, y));
-                break;
-            default:
-                System.out.println("Invalid choice");
-        }
 
-    }
-    public static double sum(double x, double y){
+         public static double sum(double x, double y){
         return x + y;
     }
     public static double mul(double x, double y){
@@ -71,4 +145,4 @@ public class CalculatorDemo {
     public static double mod(double x, double y){
         return x % y;
     }
-}
+        */
