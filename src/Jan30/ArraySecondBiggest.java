@@ -11,12 +11,15 @@ public class ArraySecondBiggest {
             if (array[j] > array[k]){
                 if (array[j] > big){
                     big = array[j];
-                }else if (array[j] > secondBig){ secondBig = array[j];}
+                }
+                if (array[j] > secondBig)
+                { secondBig = array[j];}
             }
             else if (array[k] > array[j]){
                 if (array[k] > big){
                     big = array[k];
-                }else if (array[k] > secondBig){ secondBig = array[k];}
+                }
+                if (array[k] > secondBig){ secondBig = array[k];}
             }
             j += 2;
             k += 2;
