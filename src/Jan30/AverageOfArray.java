@@ -18,5 +18,4 @@ public class AverageOfArray {
         double avg = sum/arr.length;
         return avg;
     }
-
 }
