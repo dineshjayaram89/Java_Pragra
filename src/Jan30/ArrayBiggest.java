@@ -8,7 +8,6 @@ public class ArrayBiggest {
         for (int a : arr) {
             System.out.println(a);
         }
-
         int i = 0;
         int j = 1;
         while (j < arr.length) {

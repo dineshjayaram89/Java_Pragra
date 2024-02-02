@@ -1,4 +1,4 @@
-package Jan30;
+package Assignments;
 
 public class ArraySecondBiggest {
     public static void main(String[] args) {
