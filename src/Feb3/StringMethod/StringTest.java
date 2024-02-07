@@ -27,6 +27,9 @@ public class StringTest {
         System.out.println(startsWith);
         String substring = name.substring(1, 4);
         System.out.println(substring);
-
+        String concat = name.concat(lastN.toLowerCase());
+        System.out.println(concat);
+        String repeat5 = name.repeat(5);
+        System.out.println(repeat5);
     }
 }
