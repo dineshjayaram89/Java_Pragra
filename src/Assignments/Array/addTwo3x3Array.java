@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Array;
 
 public class addTwo3x3Array {
     public static void main(String[] args) {

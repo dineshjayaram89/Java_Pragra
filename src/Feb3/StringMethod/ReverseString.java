@@ -1,7 +1,5 @@
 package Feb3.StringMethod;
 
-import Assignments.ArrayReverse;
-
 public class ReverseString {
     public static void main(String[] args) {
         String st = "pragra";

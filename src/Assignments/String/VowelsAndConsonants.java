@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.String;
 
 public class VowelsAndConsonants {
     public static void main(String[] args) {

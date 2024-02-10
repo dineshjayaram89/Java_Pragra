@@ -1,4 +1,4 @@
-package Assignments;
+package Assignments.Array;
 
 public class ArrayBiggest {
     public static void main(String[] args) {
