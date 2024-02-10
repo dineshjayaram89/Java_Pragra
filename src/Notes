@@ -1,0 +1,12 @@
+Diamond Problem:
+Comes when you try multiple inheritance, it causes ambiguity when calling methods,
+if both the parents have the same method names.
+Example:
+Imagine you have a class A that has a method doSomething(), and another class B also has a method doSomething().
+Now, let's say you want to create a new class C that inherits from both A and B.If Java allowed multiple inheritance,
+and you tried to call doSomething() from C, it would be ambiguous: should it use the doSomething() from A or from B?
+
+To avoid this confusion and keep things clear, Java allows only single inheritance, meaning a class can
+only inherit from one parent class. However, you can implement multiple interfaces, which are like contracts
+that a class can follow without causing the same confusion as multiple inheritance would.
+This helps keep Java code simpler and easier to understand.
