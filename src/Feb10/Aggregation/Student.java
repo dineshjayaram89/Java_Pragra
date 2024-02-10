@@ -12,4 +12,14 @@ public class Student {
         this.age = age;
         this.address = address;
     }
+
+    @Override
+    public String toString() {
+        return "Student : {" +
+                "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                ", age='" + age + '\'' +
+                ", address=" + address +
+                '}';
+    }
 }

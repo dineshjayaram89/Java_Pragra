@@ -21,6 +21,7 @@ public class StudentInfo {
         String stCountry = sc.nextLine();
         System.out.println("Enter the student postal code: " );
         String stPostal = sc.nextLine();
+        sc.close();
         Address address = new Address(stNo,stName,stCity,stCountry,stPostal );
         Student student = new Student(name,id,age,address);
         System.out.println("--------------------");
@@ -29,5 +30,7 @@ public class StudentInfo {
         System.out.println(student.id);
         System.out.println(student.age);
         System.out.println(student.address.streetNumber + ","+student.address.streetName+ ","+student.address.city+ ","+ student.address.country+ ","+ student.address.postalCode);
+
+        System.out.println(student);
     }
 }
