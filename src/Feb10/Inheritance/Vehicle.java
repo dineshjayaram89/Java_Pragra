@@ -12,10 +12,10 @@ public class Vehicle {
     }
 
     public void start(){
-        System.out.println("The Vehicle is starting");
+        System.out.println("The " + this.model + " is starting");
     }
     public void stop(){
-        System.out.println("The Vehicle is stopping");
+        System.out.println("The " + this.model + " is stopping");
     }
     public void displayInfo(){
         System.out.println("Make: "+make);
