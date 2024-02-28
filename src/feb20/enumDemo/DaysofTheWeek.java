@@ -5,6 +5,7 @@ public enum DaysofTheWeek {
     Wednesday(3), Thursday(4),
     Friday(5), Saturday(6),
     Sunday(7);
+    
 
     final int dayOfTheWeek;
 

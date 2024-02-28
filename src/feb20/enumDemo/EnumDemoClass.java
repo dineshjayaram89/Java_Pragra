@@ -1,5 +1,8 @@
 package feb20.enumDemo;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class EnumDemoClass {
     public static void main(String[] args) {
         DaysofTheWeek day = DaysofTheWeek.Friday;
@@ -13,6 +16,6 @@ public class EnumDemoClass {
         for (DaysofTheWeek values : d) {
             System.out.println(values);
         }
-
     }
+
 }
