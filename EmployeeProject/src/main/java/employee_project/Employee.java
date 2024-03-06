@@ -12,9 +12,8 @@ public final class Employee {
     private int id;
     private String department;
     private double salary;
-    public Employee setSalary(double salary) {
+    public void setSalary(double salary) {
         this.salary = salary;
-        return null;
     }
 
     @Override

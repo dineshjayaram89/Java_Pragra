@@ -7,7 +7,7 @@ import java.util.List;
 
 public class CarDemo {
     List<Car> carList = new ArrayList<>();
-    carList.add(new Car("Audi",2024));
+
 
 
 }
