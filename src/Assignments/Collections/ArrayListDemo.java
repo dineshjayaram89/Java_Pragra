@@ -1,7 +1,9 @@
 package Assignments.Collections;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ArrayListDemo {
     public static void main(String[] args) {
@@ -34,5 +36,12 @@ public class ArrayListDemo {
         for (Employee employee : inCanada) {
             System.out.println(employee.name);
         }
+
+        List<Integer> integers = List.of(10, 20, 434, 3434, 23, 53, 23, 20, 43, 55, 434, 3434);
+
+        Set<Integer> s = new HashSet<>(integers);
+        System.out.println(s);
+
     }
+
 }
